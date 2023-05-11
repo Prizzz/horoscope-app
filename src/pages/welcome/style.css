@@ -1,0 +1,25 @@
+.logo {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.welcome-container {
+  max-width: 305px;
+  margin: auto;
+  padding-top: 50%;
+}
+
+.welcome-title {
+  font-size: 26px;
+  font-style: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.welcome-description {
+  font-size: 16px;
+  text-align: center;
+  color: #C6CDD4;
+}
