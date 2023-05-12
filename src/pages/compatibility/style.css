@@ -1,0 +1,38 @@
+.predictionPercent {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.prediction {
+  text-align: center;
+  font-size: 16px;
+  color: #99A2AD;
+}
+
+.select-container {
+  margin: auto;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.select-separator {
+  display: block;
+  margin: auto;
+  width: 64px;
+  animation-name: spin;
+  animation-duration: 30000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
+  }
+}

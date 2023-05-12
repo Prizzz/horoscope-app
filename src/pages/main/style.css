@@ -1,20 +1,5 @@
-.main-logo {
-  width: 100px;
-  display: block;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-.main-title {
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .zodiac-options {
-  height: 50vh;
+  height: 60vh;
   overflow-y: scroll;
 }
 

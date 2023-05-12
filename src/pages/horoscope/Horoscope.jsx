@@ -5,6 +5,7 @@ import Date from '../../components/date/Date';
 
 const Horoscope = ({ zodiac }) => {
   const [day, setDay] = useState('today');
+  const [date, setDate] = useState('11.05.2003');
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -12,9 +13,10 @@ const Horoscope = ({ zodiac }) => {
       return fetch('http://localhost:8080/')
         .then((response) => response.text())
         .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
-        .then((data) => console.log(data.querySelector('aries today').innerHTML));
-
-      //setContent(json);
+        .then((data) => {
+          setContent(data.querySelector(`${zodiacs[zodiac].id} ${day}`).innerHTML);
+          setDate(data.querySelector('date').getAttribute(`${day}`));
+        });
     };
 
     fetchData().catch(console.error);
@@ -29,7 +31,9 @@ const Horoscope = ({ zodiac }) => {
           <p className="horoscrope-title">{zodiacs[zodiac].title}</p>
         </div>
         <Date setDay={setDay} />
-        <div className="horoscrope-content"></div>
+        <div className="horoscrope-content">
+          <span>{date}</span> - {content}
+        </div>
       </div>
     </div>
   );

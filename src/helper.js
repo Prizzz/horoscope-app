@@ -8,5 +8,8 @@ const port = 8080;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 rp(url).then(function (html) {
-  app.get('/', (req, res) => res.send(html));
+  app.get('/', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.send(html);
+  });
 });

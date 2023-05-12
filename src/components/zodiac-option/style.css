@@ -1,7 +1,9 @@
 .zodiac {
+  width: 90%;
   padding: 10px 0 10px 10px;
   display: flex;
   column-gap: 10px;
+  margin: auto;
   margin-bottom: 20px;
   align-items: center;
   border: 1px solid #fff;

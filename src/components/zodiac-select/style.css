@@ -1,0 +1,36 @@
+.menuZodiac-item {
+  color: #fff !important;
+  background-color: #0E0326 !important;
+}
+
+.menuZodiac-item img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.menuZodiac-select {
+  color: #fff !important;
+}
+
+.menuZodiac-select img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+ul {
+  background-color: #0E0326 !important;
+}
+
+.menuZodiac-select::before {
+  border-color: #fff !important;
+}
+
+.menuZodiac-select::after {
+  background-color: #0E0326 !important;
+}
+
+.menuZodiac-label {
+  color: #fff !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200 !important;
+}
