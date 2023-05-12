@@ -1,0 +1,27 @@
+.horoscrope-container {
+  padding-top: 40px;
+}
+
+.horoscrope-img {
+  display: block;
+  width: 285px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.horoscrope-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  margin-bottom: 30px;
+}
+
+.horoscrope-info img {
+  width: 24px;
+}
+
+.horoscrope-title {
+  font-size: 20px;
+  font-weight: 200;
+}

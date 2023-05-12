@@ -1,0 +1,39 @@
+.zodiac {
+  padding: 10px 0 10px 10px;
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.zodiac-img {
+  flex-basis: 35%;
+}
+
+.zodiac-stars {
+  display: block;
+  margin: auto;
+  max-width: 120px;
+  height: 70px;
+}
+
+.zodiac-icon {
+  display: inline;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.zodiac-title {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.zodiac-date {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #C6CDD4;
+}

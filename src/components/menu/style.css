@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+
+.menu-item {
+  font-size: 12px;
+  font-weight: bold;
+  background: transparent;
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+.menu-item.active {
+  filter: brightness(1);
+}
+
+.menu-item img {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
