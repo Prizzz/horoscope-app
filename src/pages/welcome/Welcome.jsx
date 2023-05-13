@@ -2,9 +2,9 @@ import React from 'react';
 import logo from '../../assets/logo.png';
 import './style.css';
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
-    <div className="container">
+    <div className="container" {...props}>
       <div className="welcome-container">
         <img src={logo} alt="logo" className="logo" />
         <h1 className="welcome-title">Твой гороскоп</h1>

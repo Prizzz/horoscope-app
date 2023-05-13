@@ -27,7 +27,7 @@ const Horoscope = ({ zodiac }) => {
       <div className="horoscrope-container">
         <img src={zodiacs[zodiac].image} alt="zodiac-img" className="horoscrope-img" />
         <div className="horoscrope-info">
-          <img src={zodiacs[zodiac].icon} alt="zodiac-icon" />
+          <img src={zodiacs[zodiac]?.icon} alt="zodiac-icon" />
           <p className="horoscrope-title">{zodiacs[zodiac].title}</p>
         </div>
         <Date setDay={setDay} />
