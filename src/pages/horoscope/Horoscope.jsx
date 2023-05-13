@@ -6,12 +6,12 @@ import Date from '../../components/date/Date';
 
 const Horoscope = ({ zodiac }) => {
   const [day, setDay] = useState('today');
-  const [date, setDate] = useState('11.05.2003');
+  const [date, setDate] = useState('Загрузка данных');
   const [content, setContent] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
-      return fetch('http://localhost:8080/')
+      return fetch('https://horoscope-rhag.onrender.com/')
         .then((response) => response.text())
         .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
         .then((data) => {
