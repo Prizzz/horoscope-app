@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './pages/main/Main';
 import Compatibility from './pages/compatibility/Compatibility';
 import Horoscope from './pages/horoscope/Horoscope';
