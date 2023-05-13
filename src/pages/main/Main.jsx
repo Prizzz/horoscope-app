@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Transition } from 'react-transition-group';
 import Welcome from '../welcome/Welcome';
-import Horoscope from '../horoscope/Horoscope';
 import ZodiacOption from '../../components/zodiac-option/ZodiacOption';
 import Menu from '../../components/menu/Menu';
 import logo from '../../assets/logo.png';
 import zodiacs from '../../data';
 import './style.css';
 
-const Main = () => {
-  const [zodiacSign, setZodiacSign] = useState(null);
-  const [greet, setGreet] = useState(true);
-
+const Main = ({ greet, setGreet, zodiacSign, setZodiacSign }) => {
   useEffect(() => {
+    setZodiacSign(null);
     if (greet) setTimeout(() => setGreet(false), 1000);
   }, []);
 
@@ -25,13 +23,14 @@ const Main = () => {
             <h1 className="main-title">Выберите свой знак зодиака</h1>
             <div className="zodiac-options">
               {zodiacs.map((zodiac, i) => (
-                <ZodiacOption
-                  zodiac={zodiac}
-                  key={zodiac.id}
-                  click={() => {
-                    setZodiacSign(i);
-                  }}
-                />
+                <Link to="/zodiac" key={zodiac.id}>
+                  <ZodiacOption
+                    zodiac={zodiac}
+                    click={() => {
+                      setZodiacSign(i);
+                    }}
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -66,12 +65,6 @@ const Main = () => {
         )}
       </Transition>
       <RenderMain />
-      {zodiacSign !== null && (
-        <>
-          <Horoscope zodiac={zodiacSign} />
-          <Menu />
-        </>
-      )}
     </>
   );
 };
