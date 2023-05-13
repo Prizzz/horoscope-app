@@ -11,7 +11,7 @@ import './style.css';
 const Main = ({ greet, setGreet, zodiacSign, setZodiacSign }) => {
   useEffect(() => {
     setZodiacSign(null);
-    if (greet) setTimeout(() => setGreet(false), 1000);
+    if (greet) setTimeout(() => setGreet(false), 2000);
   }, []);
 
   function RenderMain() {

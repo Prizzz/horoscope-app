@@ -11,4 +11,5 @@
 body {
   height: 100vh;
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,7,96,1) 100%);
+  overflow: hidden;
 }
